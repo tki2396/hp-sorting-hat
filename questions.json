@@ -1,0 +1,214 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "When faced with a challenging task, you typically:",
+      "options": [
+        {
+          "text": "Make a detailed plan and work systematically",
+          "scoring": {
+            "ravenclaw": 3,
+            "slytherin": 2,
+            "hufflepuff": 1,
+            "gryffindor": 0
+          }
+        },
+        {
+          "text": "Jump right in and figure it out as you go",
+          "scoring": {
+            "gryffindor": 3,
+            "slytherin": 2,
+            "hufflepuff": 1,
+            "ravenclaw": 0
+          }
+        },
+        {
+          "text": "Ask friends for help and work together",
+          "scoring": {
+            "hufflepuff": 3,
+            "gryffindor": 2,
+            "ravenclaw": 1,
+            "slytherin": 0
+          }
+        },
+        {
+          "text": "Find the most efficient path to success",
+          "scoring": {
+            "slytherin": 3,
+            "ravenclaw": 2,
+            "gryffindor": 1,
+            "hufflepuff": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Which quality do you value most in yourself?",
+      "options": [
+        {
+          "text": "Courage",
+          "scoring": {
+            "gryffindor": 3,
+            "hufflepuff": 1,
+            "slytherin": 1,
+            "ravenclaw": 0
+          }
+        },
+        {
+          "text": "Intelligence",
+          "scoring": {
+            "ravenclaw": 3,
+            "slytherin": 1,
+            "gryffindor": 1,
+            "hufflepuff": 0
+          }
+        },
+        {
+          "text": "Loyalty",
+          "scoring": {
+            "hufflepuff": 3,
+            "gryffindor": 1,
+            "ravenclaw": 1,
+            "slytherin": 0
+          }
+        },
+        {
+          "text": "Ambition",
+          "scoring": {
+            "slytherin": 3,
+            "ravenclaw": 1,
+            "hufflepuff": 1,
+            "gryffindor": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "In a group project, you're most likely to:",
+      "options": [
+        {
+          "text": "Take charge and delegate tasks",
+          "scoring": {
+            "slytherin": 3,
+            "gryffindor": 2,
+            "ravenclaw": 1,
+            "hufflepuff": 0
+          }
+        },
+        {
+          "text": "Focus on research and planning",
+          "scoring": {
+            "ravenclaw": 3,
+            "slytherin": 2,
+            "hufflepuff": 1,
+            "gryffindor": 0
+          }
+        },
+        {
+          "text": "Ensure everyone's voice is heard",
+          "scoring": {
+            "hufflepuff": 3,
+            "ravenclaw": 1,
+            "gryffindor": 1,
+            "slytherin": 0
+          }
+        },
+        {
+          "text": "Lead by example",
+          "scoring": {
+            "gryffindor": 3,
+            "hufflepuff": 2,
+            "slytherin": 1,
+            "ravenclaw": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "What would you most like to be known for?",
+      "options": [
+        {
+          "text": "Great achievements",
+          "scoring": {
+            "slytherin": 3,
+            "gryffindor": 2,
+            "ravenclaw": 1,
+            "hufflepuff": 0
+          }
+        },
+        {
+          "text": "Great wisdom",
+          "scoring": {
+            "ravenclaw": 3,
+            "slytherin": 1,
+            "hufflepuff": 1,
+            "gryffindor": 0
+          }
+        },
+        {
+          "text": "Great kindness",
+          "scoring": {
+            "hufflepuff": 3,
+            "gryffindor": 1,
+            "ravenclaw": 1,
+            "slytherin": 0
+          }
+        },
+        {
+          "text": "Great bravery",
+          "scoring": {
+            "gryffindor": 3,
+            "slytherin": 1,
+            "hufflepuff": 1,
+            "ravenclaw": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Which path in the forest appeals to you most?",
+      "options": [
+        {
+          "text": "The well-lit, clearly marked path",
+          "scoring": {
+            "hufflepuff": 3,
+            "ravenclaw": 2,
+            "slytherin": 1,
+            "gryffindor": 0
+          }
+        },
+        {
+          "text": "The mysterious, fog-covered path",
+          "scoring": {
+            "slytherin": 3,
+            "gryffindor": 2,
+            "ravenclaw": 1,
+            "hufflepuff": 0
+          }
+        },
+        {
+          "text": "The challenging, untamed path",
+          "scoring": {
+            "gryffindor": 3,
+            "slytherin": 2,
+            "hufflepuff": 1,
+            "ravenclaw": 0
+          }
+        },
+        {
+          "text": "The ancient path with historical markers",
+          "scoring": {
+            "ravenclaw": 3,
+            "hufflepuff": 2,
+            "gryffindor": 1,
+            "slytherin": 0
+          }
+        }
+      ]
+    }
+  ]
+}

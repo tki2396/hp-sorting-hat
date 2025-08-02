@@ -1,0 +1,26 @@
+{
+  "name": "hp",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && aws s3 sync dist/ s3://hp-bucket-2025 --delete",
+    "create-bucket": "aws s3api create-bucket --bucket hp-bucket-2025 --region us-east-1",
+    "allow-public-access": "aws s3api put-public-access-block --bucket hp-bucket-2025 --public-access-block-configuration BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false",
+    "configure-bucket": "npm run allow-public-access && aws s3 website s3://hp-bucket-2025 --index-document index.html && aws s3api put-bucket-policy --bucket hp-bucket-2025 --policy '{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"PublicReadGetObject\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::hp-bucket-2025/*\"}]}'",
+    "setup": "npm run create-bucket && npm run configure-bucket"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.174.0",
+    "vite": "^6.2.3"
+  }
+}

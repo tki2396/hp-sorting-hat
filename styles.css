@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    overflow: hidden;
+}
+
+#scene-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none; /* allow clicks to pass through */
+}
+
+#quiz-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 800px;
+    width: 90vw;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    text-align: center;
+    color: rgba(255, 215, 0, 0.9);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#question-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+button {
+    background-color: rgba(44, 44, 44, 0.6);
+    color: rgba(255, 215, 0, 0.9);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(2px);
+}
+
+button:hover {
+    background-color: rgba(255, 215, 0, 0.2);
+    color: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+    border-color: rgba(255, 215, 0, 0.8);
+}
+
+#result {
+    text-align: center;
+    padding: 2rem;
+}
+
+#result h2 {
+    color: rgba(255, 215, 0, 0.9);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#house-result {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* House-specific colors with transparency */
+.gryffindor { color: rgba(116, 0, 1, 0.9); }
+.hufflepuff { color: rgba(255, 215, 0, 0.9); }
+.ravenclaw { color: rgba(14, 26, 64, 0.9); }
+.slytherin { color: rgba(26, 71, 42, 0.9); }
+
+@media (max-width: 768px) {
+    #quiz-container {
+        padding: 1rem;
+        max-width: 98vw;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #question {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
